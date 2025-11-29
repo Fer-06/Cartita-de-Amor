@@ -1,0 +1,397 @@
+body {
+  background: radial-gradient(circle at top, #fad2e7, #ffc0e6);
+  overflow-x: hidden;
+  font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.hearts-wrapper {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.heart {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ff6fa5;
+  transform: rotate(-45deg);
+  opacity: 0.55;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #ff6fa5;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -10px;
+  left: 0;
+}
+
+.heart::after {
+  left: 10px;
+  top: 0;
+}
+
+.h1  { left: 3%;  bottom: 5%;  animation: floatFastUp1 6s ease-in-out infinite; }
+.h2  { left: 10%; bottom: 18%; animation: floatFastUp2 5.5s ease-in-out infinite; }
+.h3  { left: 18%; bottom: 8%;  animation: floatFastUp3 6.2s ease-in-out infinite; }
+.h4  { left: 25%; bottom: 22%; animation: floatFastUp1 5.8s ease-in-out infinite; }
+.h5  { left: 32%; bottom: 12%; animation: floatFastUp2 6.4s ease-in-out infinite; }
+.h6  { left: 40%; bottom: 4%;  animation: floatFastUp3 5.6s ease-in-out infinite; }
+.h7  { left: 48%; bottom: 20%; animation: floatFastUp1 6.1s ease-in-out infinite; }
+.h8  { left: 56%; bottom: 9%;  animation: floatFastUp2 5.7s ease-in-out infinite; }
+.h9  { left: 64%; bottom: 16%; animation: floatFastUp3 6.3s ease-in-out infinite; }
+.h10 { left: 72%; bottom: 6%;  animation: floatFastUp1 5.9s ease-in-out infinite; }
+
+.h11 { left: 80%; bottom: 18%; animation: floatFastUp2 6.2s ease-in-out infinite; }
+.h12 { left: 88%; bottom: 10%; animation: floatFastUp3 5.5s ease-in-out infinite; }
+.h13 { right: 5%; top: 6%;     animation: floatFastDown1 6s ease-in-out infinite; }
+.h14 { right: 12%; top: 18%;   animation: floatFastDown2 5.6s ease-in-out infinite; }
+.h15 { right: 20%; top: 10%;   animation: floatFastDown3 6.1s ease-in-out infinite; }
+.h16 { right: 28%; top: 22%;   animation: floatFastDown1 5.7s ease-in-out infinite; }
+.h17 { right: 36%; top: 8%;    animation: floatFastDown2 6.3s ease-in-out infinite; }
+.h18 { right: 44%; top: 16%;   animation: floatFastDown3 5.8s ease-in-out infinite; }
+.h19 { right: 52%; top: 5%;    animation: floatFastDown1 6.2s ease-in-out infinite; }
+.h20 { right: 60%; top: 20%;   animation: floatFastDown2 5.9s ease-in-out infinite; }
+
+.h21 { left: 8%;  top: 35%;    animation: floatFastDown3 6.1s ease-in-out infinite; }
+.h22 { left: 28%; top: 38%;    animation: floatFastUp1 5.4s ease-in-out infinite; }
+.h23 { left: 48%; top: 34%;    animation: floatFastUp2 6.0s ease-in-out infinite; }
+.h24 { left: 68%; top: 36%;    animation: floatFastUp3 5.6s ease-in-out infinite; }
+.h25 { right: 10%; bottom: 35%; animation: floatFastDown1 6.3s ease-in-out infinite; }
+.h26 { right: 30%; bottom: 32%; animation: floatFastDown2 5.5s ease-in-out infinite; }
+.h27 { right: 50%; bottom: 34%; animation: floatFastDown3 6.2s ease-in-out infinite; }
+.h28 { right: 70%; bottom: 30%; animation: floatFastUp1 5.7s ease-in-out infinite; }
+.h29 { left: 20%; top: 46%;    animation: floatFastUp2 5.9s ease-in-out infinite; }
+.h30 { right: 40%; top: 44%;   animation: floatFastUp3 6.2s ease-in-out infinite; }
+
+@keyframes floatFastUp1 {
+  0%   { transform: translateY(0) rotate(-45deg) scale(1); opacity: 0.4; }
+  50%  { transform: translateY(-35px) rotate(-45deg) scale(1.07); opacity: 0.9; }
+  100% { transform: translateY(0) rotate(-45deg) scale(1); opacity: 0.4; }
+}
+
+@keyframes floatFastUp2 {
+  0%   { transform: translateY(0) rotate(-45deg) scale(0.95); opacity: 0.5; }
+  50%  { transform: translateY(-28px) rotate(-45deg) scale(1.1); opacity: 1; }
+  100% { transform: translateY(0) rotate(-45deg) scale(0.95); opacity: 0.5; }
+}
+
+@keyframes floatFastUp3 {
+  0%   { transform: translateY(0) rotate(-45deg); opacity: 0.7; }
+  50%  { transform: translateY(-22px) rotate(-45deg); opacity: 0.3; }
+  100% { transform: translateY(0) rotate(-45deg); opacity: 0.7; }
+}
+
+@keyframes floatFastDown1 {
+  0%   { transform: translateY(0) rotate(-45deg) scale(1); opacity: 0.4; }
+  50%  { transform: translateY(30px) rotate(-45deg) scale(1.07); opacity: 0.9; }
+  100% { transform: translateY(0) rotate(-45deg) scale(1); opacity: 0.4; }
+}
+
+@keyframes floatFastDown2 {
+  0%   { transform: translateY(0) rotate(-45deg); opacity: 0.55; }
+  50%  { transform: translateY(24px) rotate(-45deg); opacity: 1; }
+  100% { transform: translateY(0) rotate(-45deg); opacity: 0.55; }
+}
+
+@keyframes floatFastDown3 {
+  0%   { transform: translateY(0) rotate(-45deg) scale(0.95); opacity: 0.6; }
+  50%  { transform: translateY(20px) rotate(-45deg) scale(1.05); opacity: 0.35; }
+  100% { transform: translateY(0) rotate(-45deg) scale(0.95); opacity: 0.6; }
+}
+
+.card-container {
+  text-align: center;
+  display: block;
+  width: 100%;
+  margin-top: 60px;
+  position: relative;
+  z-index: 5; 
+}
+
+.envelope {
+  position: relative; 
+  width: 460px;
+  height: 320px;
+  background: linear-gradient(145deg, #ff6fb5, #ff3d96);
+  border-radius: 18px;
+  box-shadow:
+    0 25px 60px rgba(255, 56, 140, 0.55),
+    0 0 0 1px rgba(255,255,255,0.28);
+  cursor: pointer;
+  overflow: hidden;
+  margin: 0 auto;  
+}
+@keyframes envelope-pop {
+  0%   { transform: scale(1); }
+  40%  { transform: scale(1.05); }
+  70%  { transform: scale(0.98); }
+  100% { transform: scale(1); }
+ }
+.envelope.open {
+  animation: envelope-pop 0.4s ease-out;
+}
+
+.envelope::before {
+  content: "";
+  position: absolute;    
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-style: solid;
+  border-width: 0 230px 170px 230px;
+  border-color: transparent transparent #ff297f transparent;
+}
+
+.flap {
+  position: absolute;   
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-style: solid;
+  border-width: 170px 230px 0 230px;
+  border-color: #ff8dc8 transparent transparent transparent;
+  transform-origin: top;
+  transition: transform 0.7s ease;
+}
+
+.flap::after {
+  content: "❤";
+  position: absolute;  
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 20%, #ffe2ff, #ff2b83);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 26px;
+  box-shadow: 0 10px 18px rgba(255, 0, 119, 0.6);
+}
+
+.letter {
+  position: absolute;    
+  inset: 26px 32px 38px 32px;
+  background: rgba(255, 255, 255, 0.86);
+  border: 2px dotted #e23a7f;
+  padding: 26px 30px;
+  box-shadow:
+    0 10px 26px rgba(0,0,0,0.12),
+    0 0 0 1px rgba(255,255,255,0.7);
+  backdrop-filter: blur(8px);
+  transform: translateY(140%);
+  transition: transform 0.7s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.letter::before {
+  content: "";
+  position: normal;
+  top: 18px;
+  left: 24px;
+  right: 24px;
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #ff6fa5, #ffa7d9);
+  opacity: 0.65;
+}
+
+.letter p {
+  margin-top: 12px;
+  color: #ff3d86;
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+.envelope.open .flap {
+  transform: translateX(-50%) rotateX(178deg);
+}
+
+.envelope.open .letter {
+  transform: translateY(0);
+}
+
+.btn-main,
+.btn-note {
+  border: none;
+  border-radius: 999px;
+  padding: 12px 26px;
+  background: radial-gradient(circle at 20% 0, #ecacec, #ff4f9e);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 14px 26px rgba(255, 63, 145, 0.55);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, filter 0.18s ease;
+}
+
+.btn-main {
+  margin-top: 24px;
+  font-size: 1rem;
+}
+
+.btn-note {
+  align-self: center;
+  margin-top: 18px;
+  font-size: 0.9rem;
+}
+
+.btn-main:hover,
+.btn-note:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.08);
+  box-shadow: 0 18px 30px rgba(255, 63, 145, 0.65);
+}
+
+.btn-main:active,
+.btn-note:active {
+  transform: translateY(1px) scale(0.97);
+  box-shadow: 0 8px 16px rgba(255, 63, 145, 0.45);
+}
+.envelope,
+.btn-main,
+.btn-note {
+  cursor: pointer;
+}
+
+@media (max-width: 540px) {
+  .envelope {
+    width: 90vw;
+    height: 280px;
+  }
+
+  .flap {
+    border-width: 0 45vw 150px 45vw;
+  }
+
+  .envelope::before {
+    border-width: 150px 45vw 0 45vw;
+  }
+
+  .letter p {
+    font-size: 1rem;
+  }
+}
+
+.spacer {
+  height: 150px;
+}
+
+.timeline-section,
+.minigame-section,
+.final-message {
+  background: white;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+  padding: 25px;
+  border-radius: 20px;
+  border: 3px dashed #ff4fa3;
+  position: relative;
+  z-index: 2; 
+}
+
+.timeline-section h2,
+.minigame-section h2 {
+  text-align: center;
+  color: #ff3c8e;
+  margin-top: 0;
+}
+
+.timeline-section li {
+  font-size: 17px;
+  color: #444;
+  margin: 10px 0;
+}
+
+.minigame-section {
+  text-align: center;
+}
+
+.game-area {
+  width: 100%;
+  height: 200px;
+  background: #ffe4ef;
+  border-radius: 15px;
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.final-message {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+.password-screen {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle, #ffb7d9, #ff7ab8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+}
+
+.password-box {
+  background: white;
+  padding: 30px;
+  width: 300px;
+  border-radius: 20px;
+  text-align: center;
+  border: 3px dashed #ff4fa3;
+  box-shadow: 0 0 30px rgba(255, 0, 120, 0.3);
+}
+
+.password-box h2 {
+  color: #ff3c8e;
+  font-size: 20px;
+}
+
+.password-box input {
+  width: 90%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #ff8abb;
+  margin-top: 15px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.password-box button {
+  margin-top: 15px;
+  padding: 10px 25px;
+  background: #ff4fa3;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.password-box button:hover {
+  filter: brightness(1.1);
+}
+
+#errorMsg {
+  margin-top: 12px;
+  color: red;
+  font-size: 14px;
+}
