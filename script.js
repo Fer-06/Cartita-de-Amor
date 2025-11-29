@@ -1,7 +1,7 @@
 const hints = [
   "Pista 1: Es una fecha que cambió nuestras vidas 💗",
   "Pista 2: Fue un día muy especial para los dos ✨",
-  "Última Pista: Fue en una fiesta de Halloween❣️"
+  "Última Pista: Fue en una noche de terror❣️"
 ];
 
 let hintIndex = 0;
@@ -163,3 +163,4 @@ if (gameArea) {
     if (gameStatus) gameStatus.textContent = "Minijuego reiniciado.";
   });
 }
+
